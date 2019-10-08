@@ -1,0 +1,453 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Oswald', sans-serif;
+	/*border: 2px solid red;*/
+	
+}
+*,
+:before, :after{
+	box-sizing: border-box;
+}
+
+/* FONTS
+font-family: 'Oswald', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+*/
+
+h1, h2, h3, h4, h5, h6{
+	margin: 0;
+} 
+/* ========= HEADER ========= */
+.header{
+	display: flex;
+	justify-content: space-between;	
+	height: 100px;
+	border-bottom: 1px solid #dadfe6;
+
+}
+.header__inner{
+	display: flex;
+	
+}
+.header__logo{
+	display: flex;
+	flex-direction: column;
+	width: 100px;
+	height: 98px;
+	background: #ee3b33;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	padding-top: 12px;
+	font-size: 13px;
+}
+.logo__img img{
+	width: 44px;
+	height: 44px;
+
+}
+.logo__text span{
+	
+	font-size: 10px;
+}
+.logo__text {
+	line-height: 1.3;
+	
+}
+.nav__link{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #212327;
+	font-size: 16px;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 500;
+	margin-right: 35px;
+	position: relative;
+}
+.nav__link-right{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #212327;
+	font-size: 12px;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 500;
+	margin-right: 35px;
+	position: relative;
+}
+.nav__link:last-child{
+	margin-right: 0px;
+} 
+
+.header__nav{
+	
+	/*border: 2px solid green;*/
+}
+.nav{
+	margin-left: 35px;
+	display: flex;
+	align-items: center;
+	/*border: 1px solid;*/
+	height: 96px;
+
+}
+.nav__link:hover:before{
+	content: '';
+	width: 100%;
+	height: 3px;
+	background: #ee3b33;	
+	top: 57px;
+	position: absolute;
+}
+.nav__link-right:hover:before{
+	content: '';
+	width: 100%;
+	height: 3px;
+	background: #ee3b33;	
+	top: 55px;
+	position: absolute;
+}
+.nav__link-right:last-child:hover:before{
+	display: none;
+}
+/*-- SUBNAV --*/
+.subnav{
+	display: flex;
+	justify-content: space-between;
+	padding: 0 90px;
+	margin-top: 22px;
+	height: 164px;
+	border-bottom: 1px solid #dadfe6;
+
+
+}
+.sub__img{
+	text-align: center;	
+	font-family: 'Oswald', sans-serif;
+	font-size: 13px;
+	font-weight: 500;
+	cursor: pointer;
+	position: relative;
+}
+.sub__img img {
+	width: 170px;
+	margin-bottom: 10px;
+}
+
+.sub__img:hover:before{
+	content: '';
+	width: 100%;
+	height: 3px;
+	background: #ee3b33;	
+	top: 150px;
+	position: absolute;
+}
+
+/*-- HETOBIKE --*/
+.herobike{
+	display: flex;
+	margin-left: 90px;
+	margin-top: 50px;
+
+}
+.herobike__img{
+	
+}
+.herobike__img img{
+	width: 590px;
+	height: 485px;
+}
+.herobike__inner{
+	margin-left: 98px;
+}
+.herobike__name{
+	display: flex;
+	align-items: center;
+}
+.herobike__title{
+	text-transform:uppercase;
+	font-size: 70px;
+	font-weight: 500;
+	margin-right: 25px;
+}
+
+.herobike__year16{
+	color: red;
+	font-weight: 500;
+}
+.herobike__year{
+	width: 2px;
+	height: 17px;
+	background: #e7e9ee;
+	margin:0 15px;
+}
+
+.herobike__starting{
+	text-transform:uppercase;
+	font-size: 10px;
+	font-weight: 400;
+	color: #81848a;
+}
+.herobike__price{
+	font-size: 25px;
+	font-weight: 600;
+}
+.herobike__ellipse{
+	display: flex;	
+	justify-content: space-between;
+	width: 123px;
+	margin-top: 25px;
+}
+.herobike__ellipse-inner{
+	width: 25px;
+	height:25px;	
+	/*background: url('../img/elliipse1.png') no-repeat ;
+	background-size: cover;*/
+	border-radius: 50%;	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #cbcccf;
+}
+.herobike__ellipse-inner img{
+	width: 80%;
+}
+.herobike__ellipse-inner:first-child{
+
+	border: 1px solid red;
+}
+.herobike__text{
+	width: 447px;
+	margin-top: 20px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 17px;
+	color: #212327;
+}
+.herobike__btn{
+	margin-top: 30px;
+}
+.btn__find{
+	background: red;
+	border: 0;
+	border-radius: 5px;
+	font-size: 16px;
+	font-weight: 600;
+	color: #fff;
+	padding: 15px 35px;
+	cursor: pointer;
+}
+.btn__down{
+	background: #fff;
+	border: 2px solid red;
+	border-radius: 5px;
+	font-size: 16px;
+	font-weight: 600;
+	color: red;
+	padding: 13px 30px;
+	margin-left: 14px;
+	cursor: pointer;
+}
+/* -- HORZNAV -- */
+.horznav{
+	display: flex;
+	justify-content: space-between;
+	padding: 0 130px;
+	margin: 75px 0px 30px 0px;		
+}
+.horznav__icon{
+	font-size: 18px;	
+	color:  #c8c8c8;
+	
+
+}
+.horznav__item{
+	
+	text-align: center;
+	width: 100px;
+}	
+
+
+.horznav__title{
+	margin: 5px 0px;
+	text-transform:uppercase;
+	font-size: 13px;
+	font-weight: 500;
+	color: #c8c8c8;
+}
+.horznav__lips{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: #c8c8c8;
+	position: relative;
+	z-index: 10;		
+	/*position: relative;*/
+	
+}
+
+.horznav__bloc{
+	position: relative;
+	
+}
+.horznav__line{
+	position: relative;
+	content: '';
+	width: 900px;
+	height: 2px;
+	background: #e3e3e3;
+	bottom: 15px;
+	left: 50px;	
+}
+
+.horznav__icon:hover{
+	color: red;
+}
+.horznav__lips:hover{
+	background: red;
+}
+.horznav__title:hover{
+	color: #000;
+}
+
+/* -- MOTOR -- */
+
+.motor{
+	display: flex;
+	justify-content: center;	
+	align-items: center;
+	margin-top: 60px;
+}
+.motor__inner{
+	display: flex;
+	width: 800px;	
+}
+.motor__img{
+	margin-right: 115px;
+}
+.motor__img img {	
+	height: 310px;}
+.motor__title{
+	font-size: 16px;
+	text-transform:uppercase;
+}
+.motor__title-margin{
+	margin-top: 50px;
+}
+.motor__text p{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 15px;
+}
+
+/* -- GALLERY -- */
+.gallery{
+	margin-top: 50px;
+}
+.gallery__inner{
+	display: flex;
+}
+.gallery__img,.gallery-l3{
+	display: block;
+	width: 100%;		
+}
+/* -- VIEWMOTO -- */
+.viewmoto__inner{
+	display: flex;
+	width: 850px;		
+	margin: 0 auto;
+}
+
+.viewmoto__text{
+	text-align: center;
+	font-size: 30px;
+	font-weight: 500;
+	color: #212327;
+}
+.viewmoto__text img{
+	width: 33px;
+	margin-right: 10px;
+}
+.viewmoto__name{
+	display: flex;
+	margin-top:85px;		
+	justify-content: center;
+	color: #a3a3a4;
+	text-transform: uppercase;
+}
+.viewmoto__name-text{
+	margin-right: 85px;
+	margin-top: 0px;
+	margin-bottom:0px;
+	font-size: 16px;
+}
+.viewmoto__name-text:last-child{
+	margin-right:0;
+}
+.viewmoto__photo{
+	display: flex;
+	margin: 85px 0px;
+	
+	justify-content: center;
+}
+.viewmoto__photo-center{
+	margin: 0 130px;
+}
+.viewmoto__photo-inner{	
+	text-align: center;
+}
+.viewmoto__photo-inner p {
+	margin: 0;
+	font-family: 'Oswald', sans-serif;
+}
+.viewmoto__photo-name{
+	font-family: 'Oswald', sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+}
+.viewmoto__photo-price{
+	font-size: 14px;
+	font-family: 'Oswald', sans-serif;
+	color: #8d9095;
+}
+/* -- FOOTER -- */
+.footer__intro{
+	display: flex;
+	justify-content: center;
+	height: 210px;
+	background: #212327;
+}
+.footer__inner{
+	display: flex;
+	margin: 45px 0px;
+	
+}
+.footer__items{
+	margin: 0 40px;
+	color: #787e89;
+}
+.footer__items-text{
+	font-size: 12px;
+	font-family: 'Oswald', sans-serif;
+	margin: 0;
+	line-height: 2;
+	text-transform:uppercase;
+}
+.footer__logo{
+	display: flex;
+	align-items: center;
+	margin-left: 130px;
+}
+.footer__copy{
+	display: flex;
+	justify-content: center;
+	background: #191a1e;
+}
+.footer__copy-items{
+	display: flex;
+	font-size: 10px;
+	color: #787e89;
+	text-transform:uppercase;
+}
+.footer__copy-items-right{
+	margin-right: 410px;: 
+}
